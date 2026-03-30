@@ -1,9 +1,9 @@
 variable "components" {
   default = {
+    analytics-service = ""
+    portfolio-service = ""
     frontend = ""
     postgresql = ""
     auth-service = ""
-    portfolio-service = ""
-    analytics-service = ""
   }
 }
