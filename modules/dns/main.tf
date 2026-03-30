@@ -6,3 +6,5 @@ resource "aws_route53_record" "dns" {
   records = [var.private_ip]
 }
 
+
+
