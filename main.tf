@@ -24,8 +24,9 @@ module "dns" {
 
 module "ansible" {
   source = "./modules/ansible"
-  depends_on = [module.dns]
+
   for_each =  var.components
+  depends_on = [module.dns]
   component = each.key
   public_ip = module.compute[each.key].public_ip
   env = "dev"
